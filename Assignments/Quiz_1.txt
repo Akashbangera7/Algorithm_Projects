@@ -1,0 +1,17 @@
+1)does it always yield a result?
+No
+
+2)what if the values in the given function tend to be of an order of magnitude like 10^10 rather than 1?
+
+The time will be increased.
+
+3)are there values of dfbydx that might cause a problem?
+Yes
+dybydx can not be zero, which will throw an error
+
+4)what is perhaps the biggest issue with the design of the program? Hint: think about dfbydx.
+compatibility of dfbydx with the function "f" cannot be found.
+
+5)possible bonus points for other legitimate problems that you identify and solve.
+The value of x is hard coded. Which is not a valid method. Instead we can have variables which would take many values by using functions or methods.
+Success! Your submission appears on this page. The submission confirmation number is a7bd4466-4b13-4ddd-b6da-371e72ba633c. Copy and save this number as proof of your submission. View all of your submission receipts in My Grades.

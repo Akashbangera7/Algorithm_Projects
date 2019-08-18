@@ -1,0 +1,68 @@
+package Homework1;
+
+import java.util.Random;
+
+public class RandomWalk {
+   private int x = 0;
+   private int y = 0;
+
+   private final Random random = new Random();
+
+   public void move(int dx, int dy) {
+           // TODO you need to implement this
+       x += dx;
+       y += dy;
+   }
+
+   private void randomWalk(int n) {
+       for (int i = 0; i < n; i++)
+           randomMove(n);
+   }
+
+   private void randomMove(int var) {
+       // TODO you need to implement this
+           double r = Math.random();
+           //System.out.println("Random number:"+r);
+           
+           if(r<0.25)
+           {
+               y++;
+               System.out.println("North"+" "+"Random number:"+r);
+               
+           }
+           else if (r<0.5)
+           {
+               x++;
+               System.out.println("East"+" "+"Random number:"+r);
+               
+           }
+           else if (r<0.75)
+           {
+               x--;
+               System.out.println("West"+" "+"Random number:"+r);
+               
+           }
+           else
+           {
+               y--;
+               System.out.println("South"+" "+"Random number:"+r);
+               
+           }
+           
+           
+   }
+
+   public double distance() {
+           // TODO you need to implement this
+       return Math.sqrt(x*x + y*y);
+       
+   }
+
+   public static void main(String[] args) {
+       int n = 150;
+       RandomWalk walk = new RandomWalk();
+       walk.randomWalk(n);
+       System.out.println(n + " steps: " + "distance--" + walk.distance());
+       
+   }
+}
