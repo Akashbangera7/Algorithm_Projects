@@ -1,0 +1,85 @@
+Algorithms-Reading from the book
+
+Basic programming model:
+-Euclid’s algorithm to find gcd of two numbers
+-Binary Search
+	a)import java.util.Arrays;-->Importing java library
+	-External Libraries:
+		-Standard system libraries- java.lang.*.
+			Includes math,which contains methods for commonly used mathematical functions.
+			Integer and Double-converting between strings of characters and int and double values.
+			String and String builder
+			
+		-Imported System Libraries-Java.Util.Arrays
+			starts with import statements.
+			
+		-rank()- used in binary search.
+		
+		-Standard Libraries- std*
+		
+	b)public class BinarySearch
+		-code must be in file BinarySearch.java
+			-A library of static methods is a set of static methods that
+			are defined in a Java class, by creating a file with the keywords public class followed
+			by the class name, followed by the static methods, enclosed in braces, kept in a file with
+			the same name as the class and a .java extension
+			-Modular programming-Libraries of static method enables modular programming.
+			where we build libraries of static method. Static method of one library can call static methods defined in another library..which increases the reusability of libraries, substitute the improved implementations etc.
+			eg:BinarySearch(A library) makes use of other libraries like StdIn, In, and Arrays..which makes use of other libraries.
+			
+	c)public static int rank(int key, int[] a)
+		-int is the return type.
+		-key is the parameter variable with a type int
+		-Static method:
+			-are called functions- as they can describe mathematical functions.
+			-public static double sqrt ( double c )
+			-signature,return type,method name,argument type, argument variable
+			-Invoking a static method:
+			-properties of a method;
+				-Arguments are passed by values	
+					Arrays.Sort() changes the contents of the array..ie it will sort it in an order
+				-method names can be overloaded
+				eg: Math can use..m=Math.abs(), Math.max(), Math.min() etc
+				-Another use of overloading is defining 2 versions of a function..one that takes the argument and another uses the default value of the argument.
+				- A method has single return value, but multiple return statements.
+				-A meth0d can have side effects:
+Recursion:
+A method can call itself.
+Rules:
+1)The recursion has a base case—we always include a conditional statement as the
+first statement in the program that has a return.
+2)Recursive calls must address subproblems that are smaller in some sense, so
+that recursive calls converge to the base case
+3)Recursive calls should not address subproblems that overlap				
+					
+		d)lo + (hi - lo) / 2;
+		Expressions:
+			-Datatype is set of values and set of operations on that value.
+			
+		e)int lo = 0;			
+		-initializing declaration statement
+		
+		
+Input/Output:
+	-Java program takes input values from command line arguments or from standard input stream and writes it to standard output stream.
+	
+
+Arrays:
+Making an array in a Java program involves three
+distinct steps:
+■ Declare the array name and type.
+■ Create the array.
+■ Initialize the array values.
+
+	-The reason that we need to explicitly create arrays at run time is that the Java compiler cannot know how much space to reserve for the array at compile time (as it can for primitive-type values)
+	-Once we create an array, its size is fixed.
+	
+	
+Strings:
+
+-->Binary search
+
+-->
+	
+	
+			
